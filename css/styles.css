@@ -1,0 +1,241 @@
+/* Глобальные переменные */
+:root {
+    /* Основной цвет фона */
+    --bkg-color: #ffffff;
+    /* Цвет фона заголовков */
+    --bkg-header: #2F303A;
+    /* Вспомогательный цвет фона */
+    --bkg-aux: #F5F4FA;
+    /* Основной цвет текста */
+    --color: #757575;
+    /* Базовый цвет логотипа */
+    --color-logo: #000000;
+    /* Белый цвет */
+    --color-white: #ffffff;
+    /* Цвет заголовков */
+    --color-header: #212121;
+    /* Цвет акцента */
+    --color-accent: #2196F3;
+    /* Цвет контактов в футере */
+    --footer-contacts: rgba(255, 255, 255, 0.60);
+}
+
+body {
+    /* Основной цвет фона */
+    background-color: var(--bkg-color); 
+    /* Основной цвет текста */
+    color: var(--color);
+    /* Параметры шрифта */
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+/* Общая стилизация заголовков */
+h2,
+h3 {
+    color: var(--color-header);
+    background-color: transparent;
+}
+
+/* Стиль для сброса настроек */
+.list {
+    list-style: none;
+}
+
+/* Стиль для сброса подчёркивания ссылок */
+.none-decor {
+    text-decoration: none;
+}
+
+/* Стилизация логотипа */
+.logo {
+    color: var(--color-logo);
+
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.78px;
+}
+
+.logo-accent {
+    color: var(--color-accent);
+}
+
+/* Стилизация навигации по сайту */
+.site-nav a {
+    color: var(--color-header);
+    text-decoration: none;
+
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.28px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a.current {
+    color: var(--color-accent);
+
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.28px;
+}
+
+/* Стилизация контактов */
+.contacts a {
+    color: var(--color);
+    text-decoration: none;
+
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.28px;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--color-accent);
+}
+
+/* Стилизация главной секции */
+.main-section {
+    color: var(--color-white);
+    background-color: var(--bkg-header);
+}
+
+/* Стилизация заголовка главной секции */
+.main-header {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+
+/* Стиль для кнопки в первой секции */
+.button {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87x;
+    letter-spacing: 0.96px;
+}
+
+.button:active {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+}
+
+/* Стилизация секций */
+.advantages,
+.work {
+    background-color: var(--bkg-color)
+}
+
+.h3-advantages {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.h2-work,
+.h2-team {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+}
+
+.team {
+    background-color: var(--bkg-aux);
+}
+
+.h3-team {    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.label {
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    line-height: normal;
+}
+
+/* Стиль футера */
+.footer {
+    background-color: var(--bkg-header);
+}
+.address {
+    color: var(--color-white);
+    font-style: normal;    
+}
+
+.address a {
+    color: var(--footer-contacts);
+    text-decoration: none;
+}
+
+.address a:hover,
+.address a:focus {
+    color: var(--color-accent);
+}
+
+.logo-footer {
+    color: var(--color-white);
+}
+
+/* --- СТИЛИ СТРАНИЦЫ PORTFOLIO --- */
+
+.button-portfolio button {
+        color: var(--color-header);
+        background-color: var(--bkg-aux);
+
+        text-align: center;
+        font-size: 16px;    
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.48px;
+
+        cursor: pointer;
+}
+
+.button-portfolio button:hover,
+.button-portfolio button:focus {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+}
+
+.button-portfolio button:active {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+}
+
+.h2-portfolio {
+    color: var(--color-header);
+    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+}
+
+.chapter {
+    color: var(--color);
+    
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+}
