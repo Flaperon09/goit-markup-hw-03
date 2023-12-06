@@ -46,15 +46,14 @@
     <!--Основная часть-->
     <main>
       <section class="main-section">
-        <h1 class="main-header">
-          Ефективні рішення для<br />
-          вашого бізнесу
-        </h1>
-        <button type="button" class="button">Замовити послугу</button>
+        <div class="container">
+          <h1 class="main-header">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button">Замовити послугу</button>
+        </div>
       </section>
-      <div class="container">
-        <section class="advantages">
-          <h2 class="none-display">Преимущества</h2>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2>
           <ul class="list advantages-flex">
             <li class="item-adv">
               <h3 class="h3-advantages">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -84,45 +83,55 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section class="work">
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
           <h2 class="h2-work">Чим ми займаємося</h2>
           <ul class="list item-flex">
-            <li class="flex-element el-hight">
+            <li class="flex-element">
               <img src="./images/work1.jpg" alt="Вёрстка" width="370" />
             </li>
-            <li class="flex-element el-hight">
+            <li class="flex-element">
               <img src="./images/work2.jpg" alt="Разработка" width="370" />
             </li>
-            <li class="flex-element el-hight">
+            <li class="flex-element">
               <img src="./images/work3.jpg" alt="Дизайн" width="370" />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="team">
         <div class="container">
           <h2 class="h2-team">Наша команда</h2>
           <ul class="list flex-team">
             <li class="team-element">
               <img src="./images/igor.jpg" alt="Ігор" width="270" />
-              <h3 class="h3-team">Ігор Дем'яненко</h3>
-              <p class="label">Product Designer</p>
+              <div class="team-label">
+                <h3 class="h3-team">Ігор Дем'яненко</h3>
+                <p class="label">Product Designer</p>
+              </div>
             </li>
             <li class="team-element">
               <img src="./images/olga.jpg" alt="Ольга" width="270" />
-              <h3 class="h3-team">Ольга Рєпіна</h3>
-              <p class="label">Frontend Developer</p>
+              <div class="team-label">
+                <h3 class="h3-team">Ольга Рєпіна</h3>
+                <p class="label">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-element">
               <img src="./images/mykola.jpg" alt="Микола" width="270" />
-              <h3 class="h3-team">Микола Тарасов</h3>
-              <p class="label">Marketing</p>
+              <div class="team-label">
+                <h3 class="h3-team">Микола Тарасов</h3>
+                <p class="label">Marketing</p>
+              </div>
             </li>
             <li class="team-element">
               <img src="./images/myhailo.jpg" alt="Михайло" width="270" />
-              <h3 class="h3-team">Михайло Єрмаков</h3>
-              <p class="label">UI Designer</p>
+              <div class="team-label">
+                <h3 class="h3-team">Михайло Єрмаков</h3>
+                <p class="label">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -132,12 +141,10 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container">
-        <div class="logo-ft">
-          <a href="" class="logo list">
-            <span class="logo-accent">Web</span
-            ><span class="logo-footer">Studio</span>
-          </a>
-        </div>
+        <a href="" class="logo-ft list">
+          <span class="logo logo-accent">Web</span
+          ><span class="logo logo-footer">Studio</span>
+        </a>
         <address class="address list">
           м. Київ, пр-т Лесі Українки, 26
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
